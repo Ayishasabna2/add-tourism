@@ -3,8 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'poppins' sans-serif;
-    background-size: cover;
-    background-position: center;
 }
 
 .header{
@@ -30,41 +28,11 @@ nav{
 }
 .search-bar{
     background: #fff;
-    width: 70%;
-    margin: auto;
-    padding: 0;
-    border-radius: 30px;
-    margin-top: 30%;
+    width: 70px;
+    margin: 30px;
+    padding: 50px;
+    border-radius: 10px;
 }
-.search-bar form{
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-}
-.search-bar form input{
-    display: block;
-    border: 0;
-    outline: none;
-    background: transparent;
-}
-.search-bar form button{
-    background: #fabd02;
-    width: 55px;
-    height: 55px;
-    border-radius: 50%;
-    border: 0;
-    outline: none;
-    cursor: pointer;
-}
-.search-bar form button i{
-    width: 10px;
-    margin-top: 7px;
-}
-.search-input{
-   flex: 1; 
-}
-
-
 
 .logo{
     width: 94px;
@@ -115,12 +83,18 @@ nav{
     font-family: 'Libre Baskerville', serif;
 }
 .header h1{
-    font-size: 3vw;
-    font-weight: 300;
+    font-size: 4vw;
+    font-weight: 500;
     color: #fabd02;
     text-align: center;
-    padding-top: 2%;
-    font-size: xx-large;
+    padding-top: 3%;
+}
+.header p{
+    font-size: 3vw;
+    font-weight: 300;
+    color: white;
+    text-align: center;
+    padding-top: 0%;
 }
 .container-fluid{
     margin-top: 25%;
@@ -129,10 +103,12 @@ nav{
 
 
 .sub-title{
-    margin-top: 50px;
+    margin-top: 30px;
     margin-bottom: 30px;
 }
-
+.col{
+   justify-items: 50px; 
+}
 .sub-title a:hover{
     color: #fabd02;
 }
@@ -141,12 +117,6 @@ nav{
     font-size: 100%;
 }
 
-.card-body{
-    background-color: skyblue;
-}
-.card-group{
-    font-size: 10px;
-}
 .card-img{
     position: absolute;
     width: 80%;
@@ -173,6 +143,14 @@ nav{
 }
 .footer p{
     color: #343a40;
+}
+
+.active{
+    position: relative;
+}
+.active{
+    
+
 }
 
 nav .bi-list{
@@ -259,110 +237,3 @@ nav{
 .submit{
     margin-top: 40px;
 }
-
-
-
-/*------------login-----------*/
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'poppins' sans-serif;
-}
-.main{
-    min-height: 100vh;
-    width: 100%;
-    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(images/frame3.webp);
-    background-size: cover;
-    background-position: center;
-}
-
-
-.parent{
-    display: flex;
-    flex-direction: column;
-    width: 400px;
-    padding: 20px;
-    border: 1px solid skyblue;
-    border-radius: 5px;
-    margin: auto;
-    
-}
-input{
-    margin: 5px 0px;
-    height: 40px;
-    padding: 7px;
-    
-}
-button{
-    height: 40px;
-    margin: 5px 0px;
-    background-color: skyblue;
-    border: none;
-    border-radius: 5px;
-    color: #333;
-}
-button:hover{
-    background-color: #fabd02;
-    color: #fff;
-}
-.parent p{
-    color: #fabd02;
-    margin-left: 50px;
-}
-.parent p a{
-    color: #000;
-}
-
-
-
-/*-------------sign up-----------*/
-.sign-up-form{
-    width: 350px;
-    box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
-    background: skyblue;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-bottom: 4px;
-    padding-top: 10px;
-    margin: auto;
-    text-align: center;
-}
-.sign-up-form h2{
-    margin-bottom: 30px;
-}
-
-.input-box{
-    border-radius: 20px;
-    padding: 10px;
-    margin: 10px 0;
-    width: 100%;
-    border: 1px solid #999;
-    outline: none;
-}
-.checkbox{
-    margin-left: 30px;
-}
-button{
-    width: 100%;
-    padding: 10px;
-    border-radius: 20px;
-    font-size: 15px;
-    margin: 10px 0;
-    border: none;
-    outline: none;
-    cursor: pointer;
-}
-hr{
-    margin-top: 30px;
-    width: 300px;
-}
-.or{
-    background: #000;
-    color: #fff;
-    width: 30px;
-    margin: -29px auto 15px;
-    border-radius: 50%;
-    border: 0;
-}
-
