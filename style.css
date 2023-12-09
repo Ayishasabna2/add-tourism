@@ -1,10 +1,8 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     font-family: 'poppins' sans-serif;
     background-size: cover;
-    background-position: center;
 }
 
 .header{
@@ -17,6 +15,7 @@
 }
 
 nav{
+    font-family: 'Rajdhani', sans-serif;
     display: flex;
     width: 84%;
     margin: auto;
@@ -28,43 +27,28 @@ nav{
     transition: max-height 0.5s;
 
 }
-.search-bar{
-    background: #fff;
-    width: 70%;
-    margin: auto;
-    padding: 0;
-    border-radius: 30px;
-    margin-top: 30%;
-}
-.search-bar form{
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-}
-.search-bar form input{
-    display: block;
-    border: 0;
-    outline: none;
-    background: transparent;
-}
-.search-bar form button{
-    background: #fabd02;
-    width: 55px;
-    height: 55px;
-    border-radius: 50%;
-    border: 0;
-    outline: none;
-    cursor: pointer;
-}
-.search-bar form button i{
-    width: 10px;
-    margin-top: 7px;
-}
+
 .search-input{
    flex: 1; 
 }
 
+.card-head{
+    font-family: 'Rajdhani', sans-serif;
+    position: absolute;
+    top: 3%;
+    left: 2%;
+    color: #fff;
+    font-size: medium;
 
+}
+
+.card-main{
+    font-family: 'Rajdhani', sans-serif;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-weight: 600;
+
+}
 
 .logo{
     width: 94px;
@@ -85,6 +69,7 @@ nav{
 .nav-links li a:hover{
     color: #fabd02;
 }
+
 .signup-btn{
     background: #fabd02;
     color: #000;
@@ -111,38 +96,59 @@ nav{
 .container{
     padding: 0 7%;
 }
-.header{
-    font-family: 'Libre Baskerville', serif;
-}
+
 .header h1{
+    font-size: 4vw;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    font-size: 50PX;
+    font-weight: bold;
+}
+.header h2{
+    font-family: 'EB Garamond', serif;
     font-size: 3vw;
     font-weight: 300;
     color: #fabd02;
     text-align: center;
-    padding-top: 2%;
+    padding: 1%;
     font-size: xx-large;
+    font-weight: 500;
 }
 .container-fluid{
     margin-top: 25%;
 }
-
+.container p{
+    font-family: 'EB Garamond', serif;
+    font-size: 19px;
+}
 
 
 .sub-title{
+    font-family: 'Rajdhani', sans-serif;
     margin-top: 50px;
     margin-bottom: 30px;
+    color: green;
+    font-weight: 700;
 }
 
-.sub-title a:hover{
-    color: #fabd02;
+.sub-title p{
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 19px;
+    color: #000;
 }
 
+.about{
+    font-family: 'Crimson Text', serif;
+    font-size: 24px;
+    color: #000;
+}
 .pic{
     font-size: 100%;
 }
 
 .card-body{
-    background-color: skyblue;
+    background-color: #1ca9ca;
 }
 .card-group{
     font-size: 10px;
@@ -169,6 +175,7 @@ nav{
 }
 .footer hr{
     color: #343a40;
+    width: 90%;
    
 }
 .footer p{
@@ -182,6 +189,9 @@ nav .bi-list{
 /*------small sreen-------*/
 
 @media only screen and (max-width: 700px){
+    .header{
+        margin-top: 20%;
+    }
     .logo{
         position: fixed;
         top: 4%;
@@ -224,12 +234,15 @@ nav .bi-list{
         color: #000;
         font-size: 28px;
     }
-    .active::after{
-
-    }
+    
     .hidemenu{
         max-height: 600px;
     }
+    
+    .header h1{
+        padding-top: 20%;
+    }
+
     .container-fluid{
         align-items: center;
         margin-top: 40%;
@@ -242,37 +255,81 @@ nav .bi-list{
 /*-----------listing page----------*/
 
 nav{
+    font-family: 'Rajdhani', sans-serif;
     margin-bottom: 60px;
 }
+.explore{
+    min-height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-image:  linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(images/kera.png);
+}
+.explore h2{
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 3vw;
+    font-weight: 300;
+    color: #000;
+    text-align: center;
+    font-size: 45px;
+    font-weight: 200; 
+    margin-bottom: 50px;
+}
+
 .row{
-    margin-bottom: 30px;
+    margin-bottom: 35px;
+}
+.card-title{
+    font-family: 'Rajdhani', sans-serif;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-weight: 600;
+    text-align: center;
+}
+.card-text{
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+.btn-primary{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: 100px;
+}
+
+@media only screen and (max-width: 700px){
+    .tourism{
+        margin-top: 30%;
+    }
 }
 
 
 /*----------contact---------*/
 .mb-3{
-    font-size: 18px;
-    padding: 45px 60px;
-    background-color: #fabd02;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 15px;
+    padding: 20px 25px;
     margin: 20px 18px;
+    background-color: #c4c2c2;
 }
 .submit{
-    margin-top: 40px;
+   margin-top: 10px;
 }
+
+@media only screen and (max-width: 700px){
+    .tourism{
+        padding-top: 3%;
+    }
+}
+
 
 
 
 /*------------login-----------*/
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'poppins' sans-serif;
-}
+
 .main{
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(images/frame3.webp);
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(images/login.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -312,6 +369,7 @@ button:hover{
 }
 .parent p a{
     color: #000;
+    transform: translate();
 }
 
 
@@ -366,3 +424,69 @@ hr{
     border: 0;
 }
 
+/*----------kasaragode------*/
+.tourism{
+
+    min-height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.tourism h1{
+    font-size: 3vw;
+    font-weight: 300;
+    color: #000;
+    text-align: center;
+    font-size: 80px; 
+    margin-bottom: 5%;
+    font-weight: bold;
+}
+.tourism p{
+    margin-top: 3%;
+    font-size: 20px;
+    padding: 5%;
+    color: #000;
+}
+.tourism h2{
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 3vw;
+    font-weight: 300;
+    color: green;
+    text-align: center;
+    font-size: 45px;
+    font-weight: 200; 
+    margin-bottom: 50px;
+}
+
+.card-sub{
+    font-size: medium;
+}
+
+/*---------bakal fort-------*/
+
+.department{
+    min-height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+.colum{
+    margin-top: 3%;
+    padding: 2%;
+    border: #000;
+    border: 3px;
+
+}
+.department h2{
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 3vw;
+    font-weight: 300;
+    color: green;
+    text-align: center;
+    font-size: 45px;
+    font-weight: 200; 
+    margin-bottom: 50px;
+    margin-top: 5%;
+}
