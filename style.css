@@ -297,7 +297,8 @@ nav{
 }
 
 @media only screen and (max-width: 700px){
-    .tourism{
+    .explore h2{
+        padding-top: 50px;
         margin-top: 30%;
     }
 }
@@ -316,8 +317,8 @@ nav{
 }
 
 @media only screen and (max-width: 700px){
-    .tourism{
-        padding-top: 3%;
+    .mb-3{
+        margin-top: 30%;
     }
 }
 
@@ -372,6 +373,12 @@ button:hover{
     transform: translate();
 }
 
+@media only screen and (max-width: 700px){
+    .parent{
+        width: 320px;
+    }
+}
+
 
 
 /*-------------sign up-----------*/
@@ -424,6 +431,13 @@ hr{
     border: 0;
 }
 
+@media only screen and (max-width: 700px){
+    .sign-up-form{
+        width: 300px;
+    }
+}
+
+
 /*----------kasaragode------*/
 .tourism{
 
@@ -462,6 +476,15 @@ hr{
 
 .card-sub{
     font-size: medium;
+}
+
+@media only screen and (max-width: 700px){
+    .tourism h1{
+        padding-top: 50px;
+        margin-bottom: 30px;
+        margin-top: 30%;
+        font-size: x-large;
+    }
 }
 
 /*---------bakal fort-------*/
