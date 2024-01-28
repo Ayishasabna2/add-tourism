@@ -15,21 +15,23 @@
 </head>
 <body>
     <div class="main">
-        <div class="sign-up-form">
+        <div class="sign-up-form" class="alert">
             <i class="bi bi-person-circle"></i>
             <h2>Sign Up Now</h2>
             <form>
-                <input type="Name" class="input-box" placeholder="Your Name">
-                <input type="email" class="input-box" placeholder="Your Emil">
-                <input type="password" class="input-box" placeholder="Your Password">
-                <button type="button" class="signup-btn">Sign up</button>
+                <input type="Name" class="input-box" id="neme" placeholder="Your Name">
+                <input type="email" class="input-box" id="email" placeholder="Your Emil">
+                <input type="password" class="input-box" id="password" placeholder="Your Password">
+                <button onclick="btn" type="button" class="signup-btn" id="btn">Sign up</button>
                 <hr>
                 <p class="or">OR</p>
-                <button type="button" class="Twitter-btn">Login with twitter</button>
+                <button type="button" class="Twitter-btn">Login with facebook</button>
                 <p>Do you have an account ?<a href="login.html"> Sign in</a></p>
             </form>
         </div>    
     </div>
 
+  <script src="./signup.js"></script>
+    
 </body>
 </html>
